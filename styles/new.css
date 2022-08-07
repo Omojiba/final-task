@@ -133,8 +133,7 @@ main{
 .svgs .small-guy{
     width: 60px;
     height: 60px;
-   overflow: hidden;
-    position: absolute;
+  
 
 }
 .svgs .wire{
