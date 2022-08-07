@@ -16,6 +16,8 @@
 }
 header{
     padding: 25px 0;
+    position: sticky;
+    top: 0;
     
 }
 nav{
