@@ -20,16 +20,16 @@
             <img src="./assets/talent-logo.svg" alt="">
             <div class="second-nav">
                 
-            <a href="#talent-container" class="navlink">Home</a>
+            <a href="#first-section" class="navlink">Home</a>
             <a href="#second-section" class="navlink">Impact</a>
             <a href="#fourth-section" class="navlink">Why us</a>
             <a href=""><button class="hire">Hire talents</button></a>
             </div>
         </nav>
     </header>
-    <main id="talent-container">
+    <main >
 
-        <section class="first-section">
+        <section class="first-section" id="first-section">
             <div class="first-section-left">
                 <div class="vetted">
                     <h1>Vetted and Trusted <span id="red-text">talents</span></h1>
@@ -88,8 +88,12 @@
             </div>
         </section>
 
+
+
+        <!--                                                WHY YOU SHOULD HIRE OUR TALENTS    -->
         <section id="fourth-section">
             <h1>Why Hire our <span id="red-text">Talents</span></h1>
+            
             <div class="fourth-section-1">
                 <div class="why-hire">
                     <img src="./assets/partner.svg" alt="">
@@ -125,6 +129,10 @@
         </section>
     </main>
 
+
+
+
+    <!--                                      FOOTER SECTION                            -->
     <footer>
         <div class="first-footer">
             <img src="./assets/talent-logo-white.svg" alt="">
@@ -140,5 +148,20 @@
             <a href="">talent@zuri.team</a>
         </div>
     </footer>
+
+
+    <script type="text/javascript">
+        const li = document.querySelectorAll(".navlink");
+        const sections = document.querySelectorAll("section")
+
+        function activeSection(){
+            let length = sections.length;
+            while (--length && window.scrollY + 97 < sections[length].offsetTop){}
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[length].classList.add("active");
+        }
+        activeSection();
+        window.addEventListener("scroll", activeSection);
+    </script>
 </body>
 </html>

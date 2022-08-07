@@ -5,12 +5,17 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
     
     
 }
 header{
     width:100%;
     background: white;
+}
+.active{
+    border-bottom: 3px solid #e7332b;
+    font-size: 17px;
 }
 
 nav{
@@ -44,9 +49,6 @@ nav{
 .navlink:hover{
     background-color: rgba(25, 118, 210, 0.04);
 }
-.navlink:focus{
-    border-bottom: 3px solid #e7332b;
-}
 .hire{
     background-color: #e7332b;
     border-radius: 0 0 8px 0;
@@ -59,15 +61,12 @@ nav{
     border: none;
 }
 
-#talent-container{
-    width: 100%;
-    padding-top: 100px;
-}
+
 .first-section{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 220px;
+    padding-top: 320px;
     padding-left: 8rem;
 
 }
@@ -364,7 +363,7 @@ nav{
 }
 #red-line{
     left: 0;
-    bottom: -250%;
+    bottom: -231%;
     position: absolute;
 }
 .pool{
